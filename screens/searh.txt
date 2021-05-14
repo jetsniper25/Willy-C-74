@@ -1,0 +1,14 @@
+ <ScrollView>
+          {this.state.allTransactions.map((transaction,index)=>{
+
+          
+        <View key={index} style={{justifyContent: 'center', alignItems: 'center' }}>
+          <Text>{"BookId:"+transaction.bookId}</Text>
+          <Text>{"StudentId:"+transaction.studentId}</Text>    
+          <Text>{"transaction Type:"+transaction.transactionType}</Text>
+        </View>
+        })}
+        </ScrollView>
+      );
+    }
+  }
